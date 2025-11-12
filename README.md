@@ -7,4 +7,5 @@ composer install
 cp .env.example .env  
 テキストを参照
 データベースが存在しているかを確認  
-画面表示する前にマイグレーションしておくこと
+画面表示する前にマイグレーションしておくこと  
+php artisan key:generate
