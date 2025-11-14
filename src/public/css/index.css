@@ -38,7 +38,7 @@ button {
 
 .label {
     display: inline-block;
-    padding: 20px;
+    padding: 10px;
 }
 
 span {
@@ -47,14 +47,27 @@ span {
 
 .input,
 textarea {
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
 textarea {
-    height: 200px;
+    height: 100px;
 
 
+}
+@media screen and (max-width:680px) {
+    .label,
+    .input,
+    span ,
+    textarea{
+        font-size: 0.75rem;
+        padding: 5px;
+    }
+    span {
+        padding: 0;
+    }
+    
 }

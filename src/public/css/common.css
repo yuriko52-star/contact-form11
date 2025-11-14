@@ -12,5 +12,16 @@
 .wrapper {
     margin: 0 auto;
     max-width: 900px;
+    padding: 0 20px;
 
+}
+
+@media screen and (max-width:680px) {
+    .site-title {
+        text-align: center;
+    }
+    
+    .btn {
+        margin: 60px 0;
+    }
 }

@@ -7,28 +7,29 @@
 @section('content')
     <div class="wrapper">
         
-        <form action="" method="post">
-        <div class="grid">
+        <form action="/contacts/confirm" method="post">
+        @csrf
             <h2 class="section-title">お問い合わせ</h2>
+            <div class="grid">
             <div class="title">
                 <label for="name" class="label">お名前</label>
                 <span>必須</span>
             </div>
-            <input type="text" id="name" class="input" placeholder="テスト太郎">
+            <input type="text" name="name" class="input" placeholder="テスト太郎">
 
 
             <div class="title">
                 <label for="email" class="label">メールアドレス</label>
                 <span>必須</span>
             </div>
-            <input type="mail" id="email" class="input" placeholder="test1234.com">
+            <input type="mail" id="email" name="email" class="input" placeholder="test1234.com">
 
 
             <div class="title">
                 <label for="tel" class="label">電話番号</label>
                 <span>必須</span>
             </div>
-            <input type="tel" id="tel" class="input" placeholder="0123456789">
+            <input type="tel" id="tel" name="tel" class="input" placeholder="0123456789">
 
 
             <div class="title">
