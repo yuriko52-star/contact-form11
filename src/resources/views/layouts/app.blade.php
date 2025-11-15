@@ -12,7 +12,7 @@
 <body>
     <header id="header">
         <h1 class="site-title">
-            <a href="#">ContactForm</a>
+            <a href="/">ContactForm</a>
         </h1>
     </header>
 

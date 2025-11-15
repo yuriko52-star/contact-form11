@@ -7,5 +7,7 @@ composer install
 cp .env.example .env  
 テキストを参照
 データベースが存在しているかを確認  
-画面表示する前にマイグレーションしておくこと  
-php artisan key:generate
+画面表示する前にテーブル作成しマイグレーションしておくこと  
+php artisan key:generate  
+## データベースを保存する  
+モデル作成  
