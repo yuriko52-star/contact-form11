@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Contact;
+use App\Http\Requests\ContactRequest;
 
 class ContactController extends Controller
 {
@@ -12,7 +13,7 @@ class ContactController extends Controller
         return view('index');
     }
 
-    public function confirm (Request $request) 
+    public function confirm (ContactRequest $request) 
     {
         // formタグから送られてきた値を取り出す
         // 送られてきた値を取り出すためには、Request クラスを利用
@@ -31,7 +32,7 @@ class ContactController extends Controller
     }
     // error　index.blade.phpのフォームにname値が設定されていなかった
 
-    public function store(Request $request) 
+    public function store(ContactRequest $request) 
     {
         $contact = $request->only('name','email','tel','content');
         // 保存処理では Contact モデルを利用

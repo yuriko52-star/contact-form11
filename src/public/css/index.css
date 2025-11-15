@@ -17,8 +17,14 @@
 }
 
 .input,
-textarea {
+textarea 
+{   grid-column: 2/4;
+    
+}
+.error {
+    color: red;
     grid-column: 2/4;
+    margin-bottom: 10px;
 }
 
 .btn {
