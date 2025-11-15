@@ -19,6 +19,13 @@ td {
     width: 75%;
     border: 1px solid #ccc;
 }
+.name,
+.email,
+.tel ,
+.content{
+    width: 100%;
+}
+ 
 .btn {
     margin: 60px auto;
     background-color: #000;
@@ -27,7 +34,7 @@ td {
     text-align: center;
     border-radius: 5px;
     cursor: pointer;
-    /* display: inline-block;  */
+    
     width: 150px;
     
 }

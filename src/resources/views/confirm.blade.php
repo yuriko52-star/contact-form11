@@ -14,19 +14,21 @@
             <table>
                 <tr>
                     <th>お名前</th>
-                    <td><input type="text" name="name" value="{{$contact['name'] }}"readonly></td>
+                    <td><input type="text" class="name" name="name" value="{{$contact['name'] }}"readonly></td>
                 </tr>
                 <tr>
                     <th>メールアドレス</th>
-                    <td><input type="email" name="email" value="{{$contact['email'] }}"readonly></td>
+                    <td><input type="email" class="email" name="email" value="{{$contact['email'] }}"readonly></td>
                 </tr>
                 <tr>
                     <th>電話番号</th>
-                    <td><input type="tel" name="tel" value="{{$contact['tel'] }}"readonly></td>
+                    <td><input type="tel" name="tel" value="{{$contact['tel'] }} "class="tel" readonly></td>
                 </tr>
                 <tr>
                     <th>お問い合わせ内容</th>
-                    <td><input type="text" name="content" value="{{$contact['content'] }}"readonly></td>
+                    <td>
+                        <input type="text" class="content" name="content" value="{{$contact['content'] }}"readonly>
+                    </td>
                 </tr>
             </table>
                 <div class="btn">

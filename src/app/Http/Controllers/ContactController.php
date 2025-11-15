@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Contact;
 
 class ContactController extends Controller
 {
@@ -30,8 +31,12 @@ class ContactController extends Controller
     }
     // error　index.blade.phpのフォームにname値が設定されていなかった
 
-    public function store() 
+    public function store(Request $request) 
     {
-
+        $contact = $request->only('name','email','tel','content');
+        // 保存処理では Contact モデルを利用
+        Contact::create($contact);
+        // create で$contact の変数に格納されたデータを作成することができます。
+        return view('thanks');
     }
 }
